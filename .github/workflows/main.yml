@@ -65,4 +65,7 @@ jobs:
       - name: deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Adding markdown
+        run: echo '### you have sucessfully deployed your app 🚀' >> $GITHUB_STEP_SUMMARY
       
