@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,36 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-
-
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '2rem',
-        background: 'linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%)',
-        borderRadius: '2rem',
-        boxShadow: '0 4px 24px rgba(0,0,0,0.10)',
-        marginTop: '2rem',
-        color: '#222',
-        maxWidth: 600,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-      }}>
-        <span style={{ fontSize: '4rem', marginBottom: '1rem' }}>🎉🚀✨</span>
-        <h1 style={{ fontSize: '2.5rem', margin: 0, color: '#1a7f62', fontWeight: 800, letterSpacing: 1 }}>Congratulations!</h1>
-        <p style={{ fontSize: '1.3rem', margin: '1.5rem 0 0 0', fontWeight: 500 }}>
-          You&apos;ve completed the essentials of automated application deployment with <b>GitHub Actions</b>!<br/>
-          <span style={{ fontSize: '2rem' }}>🥳💚</span>
+        <h1>Congratulations!</h1>
+        <p>
+          You&apos;ve completed the essentials of automated application
+          deployment with GitHub Actions! 🥳
         </p>
-        <p style={{ marginTop: '1.5rem', fontSize: '1.1rem', color: '#444' }}>
-          Now go build something <b>amazing</b> and share it with the world!<br/>
-          <span style={{ fontSize: '1.5rem' }}>🌍✨</span>
-        </p>
-      </div>
-
       </main>
     </>
-  )
+  );
 }
